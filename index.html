@@ -11,6 +11,44 @@
     />
     <!-- Main CSS -->
     <link rel="stylesheet" href="./assets/css/style.css" />
+    <!-- Main JS -->
+    <script src="./assets/js/script.js" defer></script>
   </head>
-  <body></body>
+  <body>
+    <section id="app" class="d-flex align-items-center pt-5">
+      <div class="container border rounded-4">
+        <h3 class="text-center my-4 text-white">
+          Send a Whatsapp message without saving mobile number.
+        </h3>
+        <form class="form m-3 m-auto text-center">
+          <input
+            type="text"
+            class="form-control w-75 m-auto p-3 text-secondary mb-3"
+            placeholder="Enter +994 *******"
+            value="+994"
+            autocomplete="off"
+            id="number"
+            required
+            data-toggle="tooltip"
+            data-placement="right"
+            title="Make sure you enter mobile number with country code"
+          />
+          <textarea
+            id="message"
+            class="form-control w-75 m-auto p-3 text-secondary"
+            placeholder="Enter your message"
+            cols="25"
+            rows="10"
+            required
+          ></textarea>
+          <input
+            type="submit"
+            id="submit"
+            class="btn btn-success w-50 my-3"
+            value="Send"
+          />
+        </form>
+      </div>
+    </section>
+  </body>
 </html>
